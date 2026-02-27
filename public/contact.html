@@ -1,26 +1,85 @@
+<!-- public/contact.html -->
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact - MySite</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MyCompany</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">MyCompany</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/login">Login/Register</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/features">JS Features</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-  <h1>MySite</h1>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+    <main>
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p class="contact-description">
+                Use this contact form to create a new contact form for your website in no time. 
+                Let us know your questions, suggestions, and concerns by filling out the contact form here.
+            </p>
+            
+            <form class="auth-form" id="contactForm">
+                <div class="name-fields">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Message Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </main>
 
-<section class="container">
-  <h2>Contact</h2>
-  <p>Email: admin@mysite.com</p>
-  <p>Phone: 08123456789</p>
-</section>
+    <footer>
+        <p>&copy; 2024 MyCompany. All rights reserved.</p>
+    </footer>
 
+    <script src="/js/main.js"></script>
+    <script src="/js/contact.js"></script>
 </body>
 </html>

@@ -1,26 +1,90 @@
+<!-- public/about.html -->
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>About - MySite</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - MyCompany</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">MyCompany</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/login">Login/Register</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/features">JS Features</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<nav>
-  <h1>MySite</h1>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
+    <main>
+        <div class="page-header">
+            <h1>About Us</h1>
+            <p>Learn more about MyCompany</p>
+        </div>
 
-<section class="container">
-  <h2>About Us</h2>
-  <p>Ini adalah contoh halaman About.</p>
-  <p>Website ini terdiri dari beberapa halaman.</p>
-</section>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Founded in 2024, MyCompany has grown to become a trusted name in the E-Commerce industry. We believe in providing high-quality products and exceptional customer service to our clients worldwide.</p>
+                
+                <h2 style="margin-top: 2rem;">Our Mission</h2>
+                <p>To revolutionize the way people shop online by offering innovative products, competitive prices, and seamless shopping experiences.</p>
+                
+                <h2 style="margin-top: 2rem;">Our Vision</h2>
+                <p>To become the leading E-Commerce platform that connects people with the products they love, while maintaining the highest standards of quality and customer satisfaction.</p>
+            </div>
+            
+            <div class="about-text">
+                <h2>Why Choose Us?</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem;">✓ 100% Quality Guarantee</li>
+                    <li style="margin-bottom: 1rem;">✓ Fast & Free Delivery</li>
+                    <li style="margin-bottom: 1rem;">✓ 24/7 Customer Support</li>
+                    <li style="margin-bottom: 1rem;">✓ Secure Payments</li>
+                    <li style="margin-bottom: 1rem;">✓ Easy Returns</li>
+                    <li style="margin-bottom: 1rem;">✓ Best Price Guarantee</li>
+                </ul>
+            </div>
+        </div>
 
+        <h2 style="text-align: center; margin-top: 3rem;">Our Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-member-image"></div>
+                <h3>John Doe</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member-image"></div>
+                <h3>Jane Smith</h3>
+                <p>CTO</p>
+            </div>
+            <div class="team-member">
+                <div class="team-member-image"></div>
+                <h3>Mike Johnson</h3>
+                <p>Head of Operations</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyCompany. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>
